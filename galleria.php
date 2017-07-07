@@ -12,7 +12,7 @@
 
 <?php include("menu.php"); ?>
 
-<?php include("location_galleria.php") ?>
+<?php include("galleria_galleria.php") ?>
 
 <?php include("footer.php"); ?>
 

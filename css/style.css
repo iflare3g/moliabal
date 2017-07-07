@@ -46,17 +46,17 @@
     background-color: white;
 }
 
-#btn-2{
-    height: 60px;
-    width: 160px;
+#btn-f{
+    height: 40px;
+    width: 100px;
     background-color: white;
     color: black;
     border: solid 1px black;
     font-family: 'font1';
-    font-size: 18px;
+    font-size: 12px;
 }
 
-#btn2:hover{
+#btn-f:hover{
     color: white;
     background-color: black;
 }
@@ -124,10 +124,10 @@ footer{
     margin-top: 180px;
 }
 
-/* LOCATION */
+/* GALLERIA FILTRI (LOCATIONS, PRODUCTS) */
 
-.btn-location{
-    margin-top: 20px;
+.container-btn{
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -135,6 +135,118 @@ footer{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+#filtri{
+    list-style: none;
+    margin-bottom: 100px;
+}
+
+#filtri li{
+    display: block;
+    padding: 5px 10px;		
+    text-decoration: none;
+    color: #212121;
+    cursor: pointer;
+    float: left;
+}
+
+#filtri li #btn-f{
+    display: block;
+}
+
+#filtri li #btn-f .active{
+    color: black;
+    background-color: white;
+}
+
+#lista .galleria {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 23%;
+	display: none;
+	float: left;
+	overflow: hidden;
+}
+
+.galleria-container {
+    overflow: hidden;
+    position: relative !important;
+    background: #212121;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.galleria img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+}
+
+.galleria .label {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: -40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.galleria .label-bg {
+    background: #212121;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.galleria .label-text {
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    padding: 5px 8px;
+}
+
+.galleria .text-title {
+    display: block;
+    font-size: 16px;
+    font-family: 'font1';
+}
+
+.galleria:hover .label {
+    bottom: 0;
+}
+
+.galleria:hover img {
+    top: -30px;
+}  
+
+/* GALLERIA */
+
+canvas {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+
+
+#container {
+    position: absolute;
+    width: 768px;
+    height: 485px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 
 /*
 1 sistemare img web sketches e inserirle 
