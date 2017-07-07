@@ -33,7 +33,6 @@
     background-color: transparent;
     position: relative;
     border: solid 1px white;
-    position: absolute;
     top: 450px;
     left: 50px;
     color: white;
@@ -81,9 +80,10 @@
     top: 0;
     left: 0;
     z-index: 100;
+    position: fixed;
 }
 
-#brand{
+#logo{
     height: 80px;
     width: auto;
     margin-left: 10px;
