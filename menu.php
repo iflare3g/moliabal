@@ -9,6 +9,7 @@
        <a href="location.php"><li>LOCATION</li></a>
        <a href="products.php"><li>PRODUCTS</li></a>
        <a href="contact.php"><li>CONTACT</li></a>
+       <a href="area.php"><li>RESERVED AREA</li></a>
    </ul>
     
 </nav>

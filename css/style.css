@@ -11,6 +11,12 @@
     font-size: 78px;
 }
 
+#titololog{
+    color: black;
+    font-family: 'font1';
+    font-size: 94px;
+}
+
 #testo{
     color: #c2051e;
     font-family: 'font1';
@@ -60,6 +66,23 @@
     background-color: black;
 }
 
+#btn-e{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#btn-e:hover{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+}
+
 /* INDEX */
 
 .sfondo{
@@ -81,6 +104,7 @@
     left: 0;
     z-index: 100;
     position: fixed;
+    margin-bottom: 50px;
 }
 
 #logo{
@@ -99,7 +123,7 @@
 }
 
 .voci{
-    margin-left: 500px;
+    margin-left: 350px;
     margin-top: -65px;
 }
 
@@ -138,7 +162,8 @@ footer{
 
 #filtri{
     list-style: none;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    margin-top: 100px;
 }
 
 #filtri li{
@@ -247,6 +272,44 @@ canvas {
     margin: auto;
 }
 
+/* LOG IN */
+
+.form{
+    margin-top: 100px;
+}
+
+.input-container{
+    padding: 30px 0px 30px 0px;
+}
+
+#input{
+    padding: 15px;
+    border: solid 1px black;
+    margin-top: 20px;
+    font-family: 'font1';
+    width: 100%;
+}
+
+/* AREA RISERVATA */
+
+.menu-riservato{
+    height: 120px;
+    background-color: black;
+}
+
+.menu-riservato a li{
+    float: left;
+    color: white;
+    padding: 20px;
+    list-style: none;
+    border: solid 1px white;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.form2{
+    margin-top: 50px;
+}
 
 /*
 1 sistemare img web sketches e inserirle 

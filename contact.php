@@ -12,6 +12,32 @@
 
 <?php include("menu.php"); ?>
 
+<div class="container-fluid">
+    <div class="row">
+       
+       <div class="col-xs-4">
+          
+          
+           
+       </div> 
+       
+       <div class="col-xs-4">
+          
+          
+           
+       </div>
+       
+       <div class="col-xs-4">
+          
+          
+           
+       </div>
+       
+       </div> 
+    </div>
+</div>
+
+<?php include("footer.php"); ?>
 
 </body>
 </html>

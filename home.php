@@ -15,7 +15,24 @@
 <div class="container-carosello">
   <img class="img-responsive carosello" src="web_sketches/1.jpg">
   <img class="img-responsive carosello" src="web_sketches/2.jpg">
+  <img class="img-responsive carosello" src="web_sketches/3.jpg">
   <img class="img-responsive carosello" src="web_sketches/4.jpg">
+  <img class="img-responsive carosello" src="web_sketches/5.jpg">
+  <img class="img-responsive carosello" src="web_sketches/6.jpg">
+  <img class="img-responsive carosello" src="web_sketches/7.jpg">
+  <img class="img-responsive carosello" src="web_sketches/8.jpg">
+  <img class="img-responsive carosello" src="web_sketches/9.jpg">
+  <img class="img-responsive carosello" src="web_sketches/10.jpg">
+  <img class="img-responsive carosello" src="web_sketches/11.jpg">
+  <img class="img-responsive carosello" src="web_sketches/12.jpg">
+  <img class="img-responsive carosello" src="web_sketches/13.jpg">
+  <img class="img-responsive carosello" src="web_sketches/14.jpg">
+  <img class="img-responsive carosello" src="web_sketches/15.jpg">
+  <img class="img-responsive carosello" src="web_sketches/16.jpg">
+  <img class="img-responsive carosello" src="web_sketches/17.jpg">
+  <img class="img-responsive carosello" src="web_sketches/18.jpg">
+  <img class="img-responsive carosello" src="web_sketches/19.jpg">
+  <img class="img-responsive carosello" src="web_sketches/20.jpg">
 </div>
 
 
