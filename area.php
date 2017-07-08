@@ -23,8 +23,8 @@
          
          <div class="input-container">
           
-          <input id="input" type="text" placeholder="name">
-          <input id="input" type="password" placeholder="password">
+          <input id="input" type="email" placeholder="email" name="email">
+          <input id="input" type="password" placeholder="password" name="password">
            
         </div>
    
