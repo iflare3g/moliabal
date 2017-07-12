@@ -13,6 +13,7 @@
 <?php include("menu.php"); ?>
 
 <div class="container-carosello">
+ <img class="img-responsive carosello" src="web_sketches/0.jpg">
   <img class="img-responsive carosello" src="web_sketches/1.jpg">
   <img class="img-responsive carosello" src="web_sketches/2.jpg">
   <img class="img-responsive carosello" src="web_sketches/3.jpg">

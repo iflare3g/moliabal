@@ -23,7 +23,7 @@
          <div class="col-md-3 col-xs-6">
                <div class="galleria ha">
                 <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
+                  <img src="">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Hotel</span> 
@@ -37,7 +37,7 @@
          <div class="col-md-3 col-xs-6">
                <div class="galleria cl">
                 <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
+                  <img src="">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Hotel</span> 
@@ -51,7 +51,7 @@
          <div class="col-md-3 col-xs-6">
                <div class="galleria cl">
                 <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
+                  <img src="">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Hotel</span> 

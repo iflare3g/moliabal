@@ -1,0 +1,37 @@
+<div class="container-btn">
+   <div class="container">
+      <div class="row">
+       
+        <div id="contenitore-galleria">
+           
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+            
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+            
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+            
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+            
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+            
+            <div class="col-md-3 col-xs-6">                
+                <img src="http://lorempixel.com/400/200/" class="img-responsive" id="galleria">
+            </div>
+         
+         </div>
+      </div>     
+   </div>
+</div>
+
+
+<script src="galleria.js"></script>

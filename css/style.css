@@ -104,7 +104,7 @@
     left: 0;
     z-index: 100;
     position: fixed;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 #logo{
@@ -272,6 +272,18 @@ canvas {
     margin: auto;
 }
 
+/* GALLRIA MODELLE */
+
+#galleria{
+    height: 200px;
+    padding: 10px;
+}
+
+#contenitore-galleria{
+    margin-top: 100px;
+}
+
+
 /* LOG IN */
 
 .form{
@@ -317,4 +329,6 @@ canvas {
 3 completare pag locations (btn e gallery)
 4 prodotti: [-accessori capelli -clutch -pochettes] 
 5 creare layout contact 
+6 account clienti e account amministratore (Monica)
+
 */

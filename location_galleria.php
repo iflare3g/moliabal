@@ -5,13 +5,19 @@
           <div class="col-xs-12">
           <ul id="filtri">
               <li>
-                  <button class="filtro" data-filter=".h" id="btn-f">HOTEL SPA &amp; SALONS</button>
+                  <button class="filtro" data-filter=".h" id="btn-f">
+                     HOTEL SPA &amp; SALONS
+                  </button>
               </li>
               <li>
-                  <button class="filtro" data-filter=".d" id="btn-f">DUTY FREE</buttton>
+                  <button class="filtro" data-filter=".d" id="btn-f">
+                    DUTY FREE
+                  </buttton>
               </li>
               <li>
-                  <button class="filtro" data-filter=".p" id="btn-f">PERFUMERIES &amp; DEPT.STORES</button>
+                  <button class="filtro" data-filter=".p" id="btn-f">
+                  PERFUMERIES &amp; DEPT.STORES
+                  </button>
               </li>
           </ul>
       </div>
@@ -566,7 +572,7 @@
               </div>  
          </div>
           
-      </div>
+      
       
       <div class="col-md-3 col-xs-6">
                <div class="galleria b">
@@ -613,7 +619,7 @@
          <div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
-                  <img src="locations/negozi/14.jpeg">
+                  <img src="locations/negozi/14.jpg">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Hyundai Shinchon Seoul Korea</span> 
@@ -627,7 +633,7 @@
          <div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
-                  <img src="locations/negozi/15.jpeg">
+                  <img src="locations/negozi/15.jpg">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Korea Umius Hyundai Seoul Korea</span> 
@@ -638,7 +644,7 @@
               </div>  
          </div> 
          
-         <div class="col-md-3 col-xs-6">
+         <!--<div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
                   <img src="locations/negozi/16.jpg">
@@ -650,7 +656,7 @@
                   </div>
                 </div>
               </div>  
-         </div>
+         </div>-->
          
           <div class="col-md-3 col-xs-6">
                <div class="galleria b">
@@ -749,7 +755,7 @@
               </div>  
          </div>
          
-         <div class="col-md-3 col-xs-6">
+         <!--<div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
                   <img src="locations/negozi/24.jpg">
@@ -761,12 +767,12 @@
                   </div>
                 </div>
               </div>  
-         </div>
+         </div>-->
          
          <div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
-                  <img src="locations/negozi/25.jpeg">
+                  <img src="locations/negozi/25.jpg">
                   <div class="label">
                     <div class="label-text">
                       <span class="text-title">Beidun Hamra KUWAIT</span> 
@@ -804,21 +810,7 @@
                 </div>
               </div>  
          </div>
-         
-         <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
-                <div class="galleria-container">
-                  <img src="locations/negozi/27.jpg">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Fatales Makni Tunisia</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
-         </div>
-         
+          
          <div class="col-md-3 col-xs-6">
                <div class="galleria b">
                 <div class="galleria-container">
