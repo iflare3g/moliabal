@@ -32,3 +32,13 @@ def area():
 @app.route('/about')
 def about():
     return render_template('about.html')
+    
+@app.route('/prodotto')
+def prodotto():
+    return render_template('prodotto.html')
+    
+@app.route('/catalogo')
+def catalogo():
+    return render_template('catalogo.html')
+    
+    
