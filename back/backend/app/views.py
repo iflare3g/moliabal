@@ -1,5 +1,6 @@
 from flask import Flask,jsonify,render_template,url_for,request,session,redirect
 from app import app
+from views_methods.upload import *
 
 @app.route('/')
 def index():
@@ -41,4 +42,7 @@ def prodotto():
 def catalogo():
     return render_template('catalogo.html')
     
+@app.route('/upload',methods=['GET','POST'])
+def carica():
+   return upload()
     
