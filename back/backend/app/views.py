@@ -1,6 +1,7 @@
 from flask import Flask,jsonify,render_template,url_for,request,session,redirect
 from app import app
 from views_methods.upload import *
+from views_methods.login import *
 
 @app.route('/')
 def index():
@@ -26,9 +27,6 @@ def products():
 def contacts():
     return render_template('contact.html')
 
-@app.route('/area')
-def area():
-    return render_template('area.html')
     
 @app.route('/about')
 def about():
@@ -39,6 +37,7 @@ def prodotto():
     return render_template('prodotto.html')
     
 @app.route('/catalogo')
+@login_required
 def catalogo():
     return render_template('catalogo.html')
     
@@ -46,3 +45,6 @@ def catalogo():
 def carica():
    return upload()
     
+@app.route('/area',methods=['GET','POST'])
+def area():
+    return valid_login()

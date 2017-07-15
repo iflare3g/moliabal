@@ -13,3 +13,4 @@ def upload():
     else:
         return redirect(url_for('prodotto'))
     return redirect(url_for('prodotto'))
+''
