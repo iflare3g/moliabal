@@ -294,6 +294,22 @@ canvas {
     padding: 30px 0px 30px 0px;
 }
 
+#email{
+    padding: 15px;
+    border: solid 1px black;
+    margin-top: 20px;
+    font-family: 'font1';
+    width: 100%;
+}
+
+#password{
+    padding: 15px;
+    border: solid 1px black;
+    margin-top: 20px;
+    font-family: 'font1';
+    width: 100%;
+}
+    
 #input{
     padding: 15px;
     border: solid 1px black;

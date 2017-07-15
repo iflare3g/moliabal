@@ -14,9 +14,8 @@ def valid_login():
     res = None
     if request.method == 'POST':
         email = request.form.get('email',None)
-        pwd = request.form.get('pwd',None)
+        pwd = request.form.get('password',None)
         res = login(email,pwd)
-        print res
         if res:
             session['username'] = email
             return redirect(url_for('catalogo'))

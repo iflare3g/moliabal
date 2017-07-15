@@ -33,6 +33,7 @@ def about():
     return render_template('about.html')
     
 @app.route('/prodotto')
+@login_required
 def prodotto():
     return render_template('prodotto.html')
     
@@ -42,6 +43,7 @@ def catalogo():
     return render_template('catalogo.html')
     
 @app.route('/upload',methods=['GET','POST'])
+@login_required
 def carica():
    return upload()
     
