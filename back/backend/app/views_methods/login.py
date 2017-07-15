@@ -21,8 +21,12 @@ def valid_login():
             return redirect(url_for('catalogo'))
         else:
             flash('Invalid credentials!')
+            print 'Invalid credentials!'
             return redirect(url_for('area'))
+    elif request.method == 'GET' and 'username' in session:
+        return redirect(url_for('catalogo'))
     else:
         return render_template('area.html')
+    
             
             
