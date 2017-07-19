@@ -1,4 +1,4 @@
-/* CSS */
+/* TIPOGRAFIA */
 
 @font-face{
     font-family: 'font1';
@@ -9,6 +9,10 @@
     color: #c2051e;
     font-family: 'font1';
     font-size: 78px;
+}
+
+#titolo2{
+    font-family: 'font1';
 }
 
 #titololog{
@@ -24,6 +28,11 @@
     margin-bottom: 50px;
 }
 
+#testoar{
+    font-family: 'font1';
+    font-size: 20px;
+}
+
 #linea{
     border: solid 1px black;
 }
@@ -32,6 +41,8 @@
     border: solid 3px #a3a2a2;
     margin-bottom: -5px;
 }
+
+/* BOTTONI */
 
 #btn{
     height: 80px;
@@ -81,6 +92,40 @@
     color: black;
     background-color: white;
     border: solid 1px black;
+}
+
+#btn-lo{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#btn-lo:hover{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+}
+
+#btn-ar{
+    color: white;
+    padding: 20px;
+    list-style: none;
+    border: solid 1px white;
+    margin-top: 30px;
+    width: 100%;
+    font-family: 'font1';
+    background-color: transparent;
+}
+
+#btn-ar:hover{
+    color: black;
+    background-color: white;
 }
 
 /* INDEX */
@@ -259,8 +304,6 @@ canvas {
     -ms-backface-visibility: hidden;
 }
 
-
-
 #container {
     position: absolute;
     width: 768px;
@@ -305,22 +348,12 @@ canvas {
 /* AREA RISERVATA */
 
 .menu-riservato{
-    height: 120px;
+    height: 200px;
     background-color: black;
 }
 
-.menu-riservato a li{
-    float: left;
-    color: white;
-    padding: 20px;
-    list-style: none;
-    border: solid 1px white;
-    margin-top: 30px;
-    width: 100%;
-}
-
-.form2{
-    margin-top: 50px;
+#imgar{
+    margin-top: 20px;
 }
 
 /*
