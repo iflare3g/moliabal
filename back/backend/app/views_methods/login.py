@@ -10,6 +10,16 @@ def login_required(f):
         return f(*args,**kwargs)
     return decorated_function
     
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args,**kwargs):
+        if session and 'username' in session:
+            if not session.get('username',None) == 'boss@gmail.com':
+                return 'NOT ALLOWED!'
+        return f(*args,**kwargs)
+    return decorated_function
+    
+    
 def valid_login():
     res = None
     if request.method == 'POST':

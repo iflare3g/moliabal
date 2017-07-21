@@ -34,6 +34,7 @@ def about():
     
 @app.route('/prodotto')
 @login_required
+@admin_required
 def prodotto():
     return render_template('amministra.html')
     
