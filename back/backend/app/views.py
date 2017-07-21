@@ -35,12 +35,12 @@ def about():
 @app.route('/prodotto')
 @login_required
 def prodotto():
-    return render_template('prodotto.html')
+    return render_template('amministra.html')
     
 @app.route('/catalogo')
 @login_required
 def catalogo():
-    return render_template('catalogo.html')
+    return render_template('riservato.html')
     
 @app.route('/upload',methods=['GET','POST'])
 @login_required
@@ -50,3 +50,11 @@ def carica():
 @app.route('/area',methods=['GET','POST'])
 def area():
     return valid_login()
+    
+@app.route('/logout',methods=['GET'])
+def logout_area():
+    return logout()
+    
+@app.errorhandler(413)
+def page_not_found(e):
+    return "Non puoi caricare un file di dimensioni maggiori a 16 MB. ERRORE HTTP/1.1 413", 413    

@@ -29,4 +29,9 @@ def valid_login():
         return render_template('area.html')
     
             
-            
+def logout():
+    if session and 'username' in session:
+        session.pop('username',None)
+    else:
+        return redirect(url_for('area'))
+    return redirect(url_for('area'))
