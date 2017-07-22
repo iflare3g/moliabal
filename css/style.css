@@ -42,6 +42,12 @@
     margin-bottom: -5px;
 }
 
+/* SPAZI */
+
+.container-fluid{
+    margin-top: 100px;
+}
+
 /* BOTTONI */
 
 #btn{
@@ -354,6 +360,10 @@ canvas {
 
 #imgar{
     margin-top: 20px;
+}
+
+#due{
+    display: none;
 }
 
 /*
