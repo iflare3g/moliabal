@@ -1,7 +1,7 @@
 import hashlib
 import pymysql as mysql
 import pymysql.cursors
-from app.config.config import access_data
+from app.config.config import PYMYSQL_CONNECTION
 import random,string
 
 def random_pwd():
@@ -18,7 +18,7 @@ def return_md5_pwd(pwd):
 def connect():
     db = None
     try:
-        db = mysql.connect(user=access_data.get('user'),password=access_data.get('password'), db=access_data.get('db'), host=access_data.get('host'),cursorclass=pymysql.cursors.DictCursor)
+        db = mysql.connect(user=PYMYSQL_CONNECTION.get('user'),password=PYMYSQL_CONNECTION.get('password'), db=PYMYSQL_CONNECTION.get('db'), host=PYMYSQL_CONNECTION.get('host'),cursorclass=pymysql.cursors.DictCursor)
     except:
         print('error no connection')
     return db

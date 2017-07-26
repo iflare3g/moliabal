@@ -364,6 +364,10 @@ canvas {
     margin-top: 20px;
 }
 
+#progress{
+      background-color: black !important;
+}
+
 /*
 1 sistemare img web sketches e inserirle 
 2 creare e sviluppare la galleria

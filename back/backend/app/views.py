@@ -2,6 +2,7 @@ from flask import Flask,jsonify,render_template,url_for,request,session,redirect
 from app import app
 from views_methods.upload import *
 from views_methods.login import *
+from decorators.decorators import *
 
 @app.route('/')
 def index():
