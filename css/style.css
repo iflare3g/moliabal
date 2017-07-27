@@ -1,3 +1,9 @@
+/* SPAZI */
+
+#spazio{
+    margin-top: 100px;
+}
+
 /* TIPOGRAFIA */
 
 @font-face{
@@ -19,6 +25,25 @@
     color: black;
     font-family: 'font1';
     font-size: 94px;
+    
+}
+
+#titoloc{
+    font-family: 'font1';
+    font-size: 64px;
+    color: #f7f6f3;
+    margin-top: -90px;
+    margin-left: 420px;
+}
+
+#iconemail{
+    height: 100px;
+    width: 100px;
+    margin-left: 320px;
+}
+
+a #titololoc{
+    text-decoration: none;
 }
 
 #testo{
@@ -31,6 +56,7 @@
 #testoar{
     font-family: 'font1';
     font-size: 20px;
+    margin-top: 10px;
 }
 
 #linea{
@@ -40,12 +66,6 @@
 #linea2{
     border: solid 3px #a3a2a2;
     margin-bottom: -5px;
-}
-
-/* SPAZI */
-
-.container-fluid{
-    margin-top: 100px;
 }
 
 /* BOTTONI */
@@ -68,14 +88,23 @@
     background-color: white;
 }
 
+@media only screen and (max-width : 452px) {
+    
+    #btn{
+        top: 400px;
+    }
+    
+}
+
 #btn-f{
-    height: 40px;
-    width: 100px;
+    /*height: 80px; */
+    width: 150px;
+    height: 80px;
     background-color: white;
     color: black;
     border: solid 1px black;
     font-family: 'font1';
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #btn-f:hover{
@@ -103,8 +132,8 @@
 #btn-lo{
     height: 50px;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: solid 1px white;
     font-family: 'font1';
     font-size: 12px;
@@ -120,11 +149,10 @@
 
 #btn-ar{
     color: white;
-    padding: 20px;
+    width: 100%;
     list-style: none;
     border: solid 1px white;
-    margin-top: 30px;
-    width: 100%;
+    margin-top: 45px;
     font-family: 'font1';
     background-color: transparent;
 }
@@ -173,10 +201,82 @@
     font-family: 'font1';
 }
 
-.voci{
-    margin-left: 350px;
-    margin-top: -65px;
+[type="checkbox"], label {
+	  display: none;
 }
+
+.voci{
+    margin-top: -85px;
+    margin-left: 500px;
+}
+
+@media (max-width: 1224px){ 
+    
+    .voci{
+        display: none;
+    }
+    
+    label {
+  		display: block;
+        color: white;
+        width: 40px;
+  		height: 40px;
+  		cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+	}
+    
+    label:after{
+        content:'';
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px white, 0px 20px 0px white;
+}
+
+	[type="checkbox"]:checked ~ .voci {
+  		display: block;
+  		z-index: 9999;
+  		position: absolute;
+        color: white;
+        margin-top: 20px;
+        color: white;
+         width: 100%;;
+	}
+    
+    nav a {
+		  color: #777;
+	}
+
+	nav ul li {
+		  display: block;
+  		float: none;
+  		width: 100%;
+  		text-align: left;
+  		background: #222;
+		  text-indent: 20px;
+	}
+
+	nav > ul > li {
+  		margin-left: 0px;
+	}
+
+	nav > ul li ul li {
+  		display: block;
+		  float: none;
+	}
+  
+	nav > ul li ul {
+		  display: block;
+  		position: relative;
+  		width: 100%;
+		  z-index: 9999;
+		  float: none;
+	}
+}
+
 
 /* FOOTER */
 
@@ -191,6 +291,7 @@ footer{
 
 .carosello{
     display: none;
+    height: 400px;
 }
 
 /* ABOUT */ 
@@ -321,6 +422,10 @@ canvas {
     margin: auto;
 }
 
+#container-carosello{
+    background-color: red;
+}
+
 /* GALLRIA MODELLE */
 
 #galleria{
@@ -332,15 +437,24 @@ canvas {
     margin-top: 100px;
 }
 
+/* CONTACT */
+
+.fasciac{
+    background-color: #212121;
+    height: 100px;
+}
 
 /* LOG IN */
 
 .form{
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-left: -350px;
 }
 
 .input-container{
     padding: 30px 0px 30px 0px;
+    margin-bottom: 20px;
+    margin-top: -50px;
 }
 
 #input{
@@ -362,8 +476,12 @@ canvas {
     margin-top: 20px;
 }
 
-#due{
-    display: none;
+#prova{
+    margin-left: -35px;
+}
+
+#bordo{
+    border: solid 1px black;
 }
 
 /*
@@ -374,4 +492,12 @@ canvas {
 5 creare layout contact 
 6 account clienti e account amministratore (Monica)
 
+*/
+
+/*
+luxury hair accessories
+luxury fashion accessories
+accessori capelli made in italy
+fashion accessories made in italy
+luxury clutch & cosmetic bags
 */

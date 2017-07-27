@@ -4,9 +4,6 @@
           
           <ul id="filtri">
               <li>
-                  <button class="filtro" data-filter=".ha, .cl, .po" id="btn-f">ALL</button>
-              </li>
-              <li>
                   <button class="filtro" data-filter=".ha" id="btn-f">HAIR ACCESSORIES</button>
               </li>
               <li>
@@ -21,118 +18,127 @@
       <div class="row">
         
          <div class="col-md-3 col-xs-6">
-               <div class="galleria ha">
-                <div class="galleria-container">
-                  <img src="">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
+            <img src="ha/1.png" class="img-responsive" id="bordo">
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria cl">
-                <div class="galleria-container">
-                  <img src="">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
+            <img src="ha/2.jpg" class="img-responsive" id="bordo">
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria cl">
-                <div class="galleria-container">
-                  <img src="">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
+            <img src="ha/3.jpg" class="img-responsive" id="bordo">
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria po">
-                <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
-         </div>
-         
-         <div class="col-md-3 col-xs-6">
-               <div class="galleria po">
-                <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
-         </div>
-         
-         <div class="col-md-3 col-xs-6">
-               <div class="galleria po">
-                <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
-         </div>
-         
-         <div class="col-md-3 col-xs-6">
-               <div class="galleria po">
-                <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
-         </div>
-         
-         <div class="col-md-3 col-xs-6">
-               <div class="galleria po">
-                <div class="galleria-container">
-                  <img src="locations/IMG_0549.JPG">
-                  <div class="label">
-                    <div class="label-text">
-                      <span class="text-title">Hotel</span> 
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>  
+            <img src="ha/4.jpg" class="img-responsive" id="bordo">
          </div>
          
       </div>
+        
+      <div class="row">    
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/5.png" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/6.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/7.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/8.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+      </div>    
+          
+      <div class="row">
+        
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/9.png" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="ha/10.jpg" class="img-responsive" id="bordo">
+         </div>
+
+      </div>
+      
+      <div class="row">    
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/1.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/2.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/3.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/4.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+      </div>
+      
+      <div class="row">    
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/5.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/6.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/7.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="pochettes/8.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+      </div>
+      
+      <div class="row">    
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/1.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/2.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/3.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/4.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+      </div>
+      
+      <div class="row">    
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/5.jpg" class="img-responsive" id="bordo">
+         </div>
+         
+         <div class="col-md-3 col-xs-6">
+            <img src="clutch/6.jpg" class="img-responsive" id="bordo">
+         </div>
+                 
+      </div>
+      
       
    </div>
 </div>

@@ -10,31 +10,32 @@
 </head>
 <body>
 
-<?php include("menu.php"); ?>
+<nav class="menu">
+ 
+  <a href="index.html"><img src="img/logo.png" class="img-responsive" id="logo"></a>
+  
+  <input type="checkbox" id="nav" /><label for="nav"></label>
+   
+   <ul class="voci">
+       <a class="voce" href="home.php"><li>HOME</li></a>
+       <a class="voce" href="about.php"><li>ABOUT</li></a>
+       <a class="voce" href="location.php"><li>LOCATION</li></a>
+       <a class="voce" href="products.php"><li>PRODUCTS</li></a>
+       <a class="voce" href="contact.php"><li>CONTACT</li></a>
+       <a class="voce" href="area.php"><li>RESERVED AREA</li></a>
+   </ul>
+    
+</nav>
 
-<div class="container-fluid">
-    <div class="row">
-       
-       <div class="col-xs-4">
-          
-          
-           
-       </div> 
-       
-       <div class="col-xs-4">
-          
-          
-           
-       </div>
-       
-       <div class="col-xs-4">
-          
-          
-           
-       </div>
-       
-       </div> 
-    </div>
+<div id="spazio"></div>
+
+<?php include("footer.php"); ?>
+
+<div class="fasciac">
+   <img src="img/email.png" class="img-responsive" id="iconemail">
+    <a href="mailto:info@moliabal.it">
+        <h1 id="titoloc">info@moliabal.it</h1>
+    </a>
 </div>
 
 <?php include("footer.php"); ?>

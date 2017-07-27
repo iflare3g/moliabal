@@ -10,30 +10,46 @@
 </head>
 <body>
 
-<?php include("menu.php"); ?>
+<nav class="menu">
+ 
+  <a href="index.html"><img src="img/logo.png" class="img-responsive" id="logo"></a>
+  
+  <input type="checkbox" id="nav" /><label for="nav"></label>
+   
+   <ul class="voci">
+       <a class="voce" href="home.php"><li>HOME</li></a>
+       <a class="voce" href="about.php"><li>ABOUT</li></a>
+       <a class="voce" href="location.php"><li>LOCATION</li></a>
+       <a class="voce" href="products.php"><li>PRODUCTS</li></a>
+       <a class="voce" href="contact.php"><li>CONTACT</li></a>
+       <a class="voce" href="area.php"><li>RESERVED AREA</li></a>
+   </ul>
+    
+</nav>
 
-<div class="container-carosello">
- <img class="img-responsive carosello" src="web_sketches/0.jpg">
-  <img class="img-responsive carosello" src="web_sketches/1.jpg">
-  <img class="img-responsive carosello" src="web_sketches/2.jpg">
-  <img class="img-responsive carosello" src="web_sketches/3.jpg">
-  <img class="img-responsive carosello" src="web_sketches/4.jpg">
-  <img class="img-responsive carosello" src="web_sketches/5.jpg">
-  <img class="img-responsive carosello" src="web_sketches/6.jpg">
-  <img class="img-responsive carosello" src="web_sketches/7.jpg">
-  <img class="img-responsive carosello" src="web_sketches/8.jpg">
-  <img class="img-responsive carosello" src="web_sketches/9.jpg">
-  <img class="img-responsive carosello" src="web_sketches/10.jpg">
-  <img class="img-responsive carosello" src="web_sketches/11.jpg">
-  <img class="img-responsive carosello" src="web_sketches/12.jpg">
-  <img class="img-responsive carosello" src="web_sketches/13.jpg">
-  <img class="img-responsive carosello" src="web_sketches/14.jpg">
-  <img class="img-responsive carosello" src="web_sketches/15.jpg">
-  <img class="img-responsive carosello" src="web_sketches/16.jpg">
-  <img class="img-responsive carosello" src="web_sketches/17.jpg">
-  <img class="img-responsive carosello" src="web_sketches/18.jpg">
-  <img class="img-responsive carosello" src="web_sketches/19.jpg">
-  <img class="img-responsive carosello" src="web_sketches/20.jpg">
+<div class="container-carosello" id="spazio">
+ 
+  <img class="img-responsive carosello" src="ws/1.jpg">
+  <img class="img-responsive carosello" src="ws/2.jpg">
+  <img class="img-responsive carosello" src="ws/3.jpg">
+  <img class="img-responsive carosello" src="ws/4.jpg">
+  <img class="img-responsive carosello" src="ws/5.jpg">
+  <img class="img-responsive carosello" src="ws/6.jpg">
+  <img class="img-responsive carosello" src="ws/7.jpg">
+  <img class="img-responsive carosello" src="ws/8.jpg">
+  <img class="img-responsive carosello" src="ws/9.jpg">
+  <img class="img-responsive carosello" src="ws/10.jpg">
+  <img class="img-responsive carosello" src="ws/11.jpg">
+  <img class="img-responsive carosello" src="ws/12.jpg">
+  <img class="img-responsive carosello" src="ws/13.jpg">
+  <img class="img-responsive carosello" src="ws/14.jpg">
+  <img class="img-responsive carosello" src="ws/15.jpg">
+  <img class="img-responsive carosello" src="ws/16.jpg">
+  <img class="img-responsive carosello" src="ws/17.jpg">
+  <img class="img-responsive carosello" src="ws/18.jpg">
+  <img class="img-responsive carosello" src="ws/19.jpg">
+  <img class="img-responsive carosello" src="ws/20.jpg">
+  <img class="img-responsive carosello" src="ws/21.jpg"> 
 </div>
 
 

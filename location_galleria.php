@@ -1,22 +1,22 @@
-<div class="container-btn">
+  <div class="container-btn">
    <div class="container">
       <div class="row">
           
           <div class="col-xs-12">
-          <ul id="filtri">
+          <ul id="filtri" onchange="filtro();">
               <li>
-                  <button class="filtro" data-filter=".h" id="btn-f">
-                     HOTEL SPA &amp; SALONS
+                  <button class="h" value="h" id="btn-f">
+                      <strong>HOTEL SPA &amp; SALONS</strong>
                   </button>
               </li>
               <li>
-                  <button class="filtro" data-filter=".d" id="btn-f">
-                    DUTY FREE
+                  <button class="d" value="d" id="btn-f">
+                      <strong>DUTY FREE</strong>
                   </buttton>
               </li>
               <li>
-                  <button class="filtro" data-filter=".p" id="btn-f">
-                  PERFUMERIES &amp; DEPT.STORES
+                  <button class="p" value="b" id="btn-f">
+                      <strong>PERFUMERIES &amp; DEPT.STORES</strong>
                   </button>
               </li>
           </ul>
@@ -26,7 +26,7 @@
       <div class="row">
         
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/1.jpg">
                   <div class="label">
@@ -40,7 +40,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/2.jpg">
                   <div class="label">
@@ -54,7 +54,7 @@
          </div>
               
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/3.jpg">
                   <div class="label">
@@ -68,7 +68,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/4.jpg">
                   <div class="label">
@@ -82,7 +82,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/5.jpg">
                   <div class="label">
@@ -96,7 +96,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/6.jpg">
                   <div class="label">
@@ -110,7 +110,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/7.jpg">
                   <div class="label">
@@ -124,7 +124,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/8.jpg">
                   <div class="label">
@@ -138,7 +138,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/9.jpg">
                   <div class="label">
@@ -152,7 +152,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/10.jpg">
                   <div class="label">
@@ -166,7 +166,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/11.jpg">
                   <div class="label">
@@ -180,7 +180,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria h">
+               <div class="galleria" id="h">
                 <div class="galleria-container">
                   <img src="locations/hotel/12.jpg">
                   <div class="label">
@@ -194,7 +194,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/1.jpg">
                   <div class="label">
@@ -208,7 +208,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/2.jpg">
                   <div class="label">
@@ -222,7 +222,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/3.jpg">
                   <div class="label">
@@ -236,7 +236,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/4.jpg">
                   <div class="label">
@@ -250,7 +250,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/5.jpg">
                   <div class="label">
@@ -264,7 +264,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/6.jpg">
                   <div class="label">
@@ -278,7 +278,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/7.jpg">
                   <div class="label">
@@ -292,7 +292,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/8.jpg">
                   <div class="label">
@@ -306,7 +306,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/9.jpg">
                   <div class="label">
@@ -320,7 +320,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/10.jpg">
                   <div class="label">
@@ -334,7 +334,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/11.jpg">
                   <div class="label">
@@ -348,7 +348,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/12.jpg">
                   <div class="label">
@@ -362,7 +362,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/13.jpg">
                   <div class="label">
@@ -376,7 +376,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/14.jpg">
                   <div class="label">
@@ -390,7 +390,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/15.jpg">
                   <div class="label">
@@ -404,7 +404,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/16.jpg">
                   <div class="label">
@@ -418,7 +418,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria d">
+               <div class="galleria" id="d">
                 <div class="galleria-container">
                   <img src="locations/aeroporti/17.jpg">
                   <div class="label">
@@ -432,7 +432,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/1.jpg">
                   <div class="label">
@@ -446,7 +446,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/2.jpg">
                   <div class="label">
@@ -461,7 +461,7 @@
          
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/3.jpg">
                   <div class="label">
@@ -475,7 +475,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/4.jpg">
                   <div class="label">
@@ -489,7 +489,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/5.jpg">
                   <div class="label">
@@ -503,7 +503,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/6.jpg">
                   <div class="label">
@@ -517,7 +517,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/7.jpg">
                   <div class="label">
@@ -531,7 +531,7 @@
          </div>
           
           <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/8.jpg">
                   <div class="label">
@@ -545,7 +545,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/9.jpg">
                   <div class="label">
@@ -559,7 +559,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/10.jpg">
                   <div class="label">
@@ -575,7 +575,7 @@
       
       
       <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/11.jpg">
                   <div class="label">
@@ -589,7 +589,7 @@
          </div>
           
           <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/12.jpg">
                   <div class="label">
@@ -603,7 +603,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/13.jpg">
                   <div class="label">
@@ -617,7 +617,7 @@
          </div>  
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/14.jpg">
                   <div class="label">
@@ -631,7 +631,7 @@
          </div>  
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/15.jpg">
                   <div class="label">
@@ -659,7 +659,7 @@
          </div>-->
          
           <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/17.jpg">
                   <div class="label">
@@ -673,7 +673,7 @@
          </div>
         
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/18.jpg">
                   <div class="label">
@@ -687,7 +687,7 @@
          </div> 
             
         <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/19.jpg">
                   <div class="label">
@@ -701,7 +701,7 @@
          </div>
             
         <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/20.jpg">
                   <div class="label">
@@ -715,7 +715,7 @@
          </div>  
             
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/21.jpg">
                   <div class="label">
@@ -728,7 +728,7 @@
               </div>  
          </div>                                                                                                    
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/22.jpg">
                   <div class="label">
@@ -742,7 +742,7 @@
          </div>       
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/23.jpg">
                   <div class="label">
@@ -770,7 +770,7 @@
          </div>-->
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/25.jpg">
                   <div class="label">
@@ -784,7 +784,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/26.jpg">
                   <div class="label">
@@ -798,7 +798,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/27.jpg">
                   <div class="label">
@@ -812,7 +812,7 @@
          </div>
           
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/28.jpg">
                   <div class="label">
@@ -826,7 +826,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/30.jpg">
                   <div class="label">
@@ -840,7 +840,7 @@
          </div>
          
          <div class="col-md-3 col-xs-6">
-               <div class="galleria b">
+               <div class="galleria" id="b">
                 <div class="galleria-container">
                   <img src="locations/negozi/31.jpg">
                   <div class="label">
@@ -855,6 +855,3 @@
          
    </div>
 </div>
-
-
-<script src="galleria.js"></script>
