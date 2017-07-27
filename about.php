@@ -29,7 +29,7 @@
 </nav>
 
 <div class="container-fluid" id="spazio">
-    <div class="col-xs-5">
+    <div class="col-md-5 col-xs-12">
    
    <h1 id="titolo">ABOUT</h1>
    
@@ -54,7 +54,7 @@
     
     </div>
     
-    <div class="col-xs-7">
+    <div class="col-md-7 col-xs-12">
        
        <img src="img/about_img.png" class="img-responsive" id="imgabout">
         
@@ -64,7 +64,15 @@
 
 <hr id="linea2">
 
-<?php include("footer.php"); ?>
+<footer>
+    
+    <div class="container">
+       <div class="row">
+           
+       </div>
+    </div>
+        
+</footer>
 
 </body>
 </html>

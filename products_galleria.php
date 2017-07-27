@@ -13,6 +13,7 @@
                   <button class="filtro" data-filter=".po" id="btn-f">POCHETTES</button>
               </li>
           </ul>
+          
       </div> 
       
       <div class="row">
@@ -138,7 +139,6 @@
          </div>
                  
       </div>
-      
       
    </div>
 </div>

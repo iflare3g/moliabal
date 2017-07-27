@@ -29,7 +29,15 @@
 
 <div id="spazio"></div>
 
-<?php include("footer.php"); ?>
+<footer>
+    
+    <div class="container">
+       <div class="row">
+           
+       </div>
+    </div>
+    
+</footer>
 
 <div class="fasciac">
    <img src="img/email.png" class="img-responsive" id="iconemail">
@@ -38,7 +46,15 @@
     </a>
 </div>
 
-<?php include("footer.php"); ?>
+<footer>
+    
+    <div class="container">
+       <div class="row">
+           
+       </div>
+    </div>
+    
+</footer>
 
 </body>
 </html>

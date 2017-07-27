@@ -403,14 +403,6 @@ footer{
 
 /* GALLERIA */
 
-canvas {
-    position: absolute;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-}
-
 #container {
     position: absolute;
     width: 768px;
@@ -422,8 +414,12 @@ canvas {
     margin: auto;
 }
 
-#container-carosello{
-    background-color: red;
+.container-carosello{
+    background-color: #f7f6f3;
+}
+
+.carosello{
+    /*margin-left: 40px; */
 }
 
 /* GALLRIA MODELLE */

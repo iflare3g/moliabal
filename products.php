@@ -17,7 +17,7 @@
   <input type="checkbox" id="nav" /><label for="nav"></label>
    
    <ul class="voci">
-       <a class="voce" href="home.php"><li>HOME</li></a>
+       <a class="voce" href="home.html"><li>HOME</li></a>
        <a class="voce" href="about.php"><li>ABOUT</li></a>
        <a class="voce" href="location.php"><li>LOCATION</li></a>
        <a class="voce" href="products.php"><li>PRODUCTS</li></a>
@@ -29,7 +29,15 @@
 
 <?php include("products_galleria.php") ?>
 
-<?php include("footer.php"); ?>
+<footer>
+    
+    <div class="container">
+       <div class="row">
+           
+       </div>
+    </div>
+    
+</footer>
 
 </body>
 </html>
