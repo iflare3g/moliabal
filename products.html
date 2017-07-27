@@ -1,16 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+<nav class="menu">
+ 
+  <a href="index.html"><img src="img/logo.png" class="img-responsive" id="logo"></a>
+  
+  <input type="checkbox" id="nav" /><label for="nav"></label>
+   
+   <ul class="voci">
+       <a class="voce" href="home.html"><li>HOME</li></a>
+       <a class="voce" href="about.html"><li>ABOUT</li></a>
+       <a class="voce" href="location.html"><li>LOCATION</li></a>
+       <a class="voce" href="products.html"><li>PRODUCTS</li></a>
+       <a class="voce" href="contact.html"><li>CONTACT</li></a>
+       <a class="voce" href="area.html"><li>RESERVED AREA</li></a>
+   </ul>
+    
+</nav>
+
 <div class="container-btn">
    <div class="container">
       <div class="row">
           
           <ul id="filtri">
               <li>
-                  <button class="filtro" data-filter=".ha" id="btn-f">HAIR ACCESSORIES</button>
+                  <button class="filtro" data-filter=".ha" id="btn-f">
+                      <strong>HAIR ACCESSORIES</strong>
+                  </button>
               </li>
               <li>
-                  <button class="filtro" data-filter=".cl" id="btn-f">CLUTCH</buttton>
+                  <button class="filtro" data-filter=".cl" id="btn-f">
+                      <strong>CLUTCH</strong>
+                  </buttton>
               </li>
               <li>
-                  <button class="filtro" data-filter=".po" id="btn-f">POCHETTES</button>
+                  <button class="filtro" data-filter=".po" id="btn-f">
+                      <strong>POCHETTES</strong>
+                  </button>
               </li>
           </ul>
           
@@ -145,3 +180,24 @@
 
 
 <script src="galleria.js"></script>
+
+<footer>
+   
+   <div class="container">
+       <div class="row" >
+         
+         <div class="col-md-3 col-md-offset-4 col-xs-12">
+            
+             <ul id="social">
+                 <li><a href=""><img src="img/fb.png" class="img-responsive"></a></li>
+                 <li><a href=""><img src="img/in.png" class="img-responsive"></a></li>
+             </ul>
+
+         </div>
+       </div>
+   </div>
+
+</footer>
+
+</body>
+</html>

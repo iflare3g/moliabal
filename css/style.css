@@ -36,6 +36,10 @@
     margin-left: 420px;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 #iconemail{
     height: 100px;
     width: 100px;
@@ -285,6 +289,21 @@ footer{
     color: white;
     background-image: url(../img/footer.png);
     width: 100%;
+}
+
+#social{
+    margin-top: 75px;
+    float: left;
+}
+
+#social li {
+    float: right;
+    padding: 20px;
+}
+
+#social li a img{
+    width: 70px;
+    height: auto;
 }
 
 /* CAROSELLO */
