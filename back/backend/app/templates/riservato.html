@@ -6,47 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+       
 </head>
 <body>
 
 <div class="container-fluid">
-   <div class="row">
+   <div class="row"> 
        
        <ul class="menu-riservato">
-          <div class="col-xs-3">
-               <a href="mailto:indirizzo@email.com"><button id="btn-lo">EMAIL</button></a>
-          </div>
        
-          <div class="col-xs-3 col-xs-offset-6">
-               <a href="/logout"><button id="btn-lo">LOG OUT</button></a>
+       <div id="prova">
+       
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">MARKETING &amp; ADVERTISING</button>
           </div>
           
-          <div class="col-xs-6">
-              <button id="btn-ar">CATALOGO</button>
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">STILL-LIFE PHOTOS</button>
           </div>
           
-          <div class="col-xs-6">
-              <button id="btn-ar">SHOWROOM</button>
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">BRAND IMAGES</button>
           </div>
+          
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">DISPLAYS</button>
+          </div>
+          
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">CATALOGUES</button>
+          </div>
+          
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">LOCATIONS</button>     
+          </div>
+          
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">PRICE LISTS</button>     
+          </div>
+          
+          <div class="col-md-3 col-xs-12">
+              <button id="btn-ar" oneclick="bottoni()">FASHION SKETCHES</button>     
+          </div>
+           
+      </div>
            
        </ul> 
        
-       <div id="catalogo">
-         
-          <div class="col-xs-3">
-           <img src="../static/img/sfondo.jpg" class="img-responsive" id="imgar">
-           <p id="testoar">titolo:</p>
-          </div>
-      
+       <div id="uno" oneclick="bottoni()">
        </div>
        
-       <div id="showroom">
+       <div id="due" oneclick="bottoni()">
            <img src="../static/img/sfondo.jpg" class="img-responsive col-xs-3" id="imgar">
        </div>
-
-   </div>
+       
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../static/js/catalogo.js"></script>
+  </div>
 </div>
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@ def login(username,pwd):
     res = None
     connection = connect()
     if connection is not None:
-        if not username in EMAIL.get('mail',None):
+        if not username in EMAIL.get('mail',None) and username != None:
             data = [username,pwd]
             query = 'select * from customers where username=%s and pwd=%s;'
             res = safety_get_query(connection,query,data)

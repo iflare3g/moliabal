@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 
 function post(){
+    toastr.options = {positionClass:"toast-top-full-width"};
     $('form').submit(function(event){
         event.preventDefault();
         //$.LoadingOverlay('show');
@@ -28,7 +29,7 @@ function post(){
             contentType : false,
             
             success : function(){
-                alert('File uploaded!');
+                toastr.success('File Uploaded!');
                 //$.LoadingOverlay('hide');
                 $('#progress').attr('aria-valuenow',0).css('width',0 + '%').text(0 + '%');
                 clearInput();
@@ -37,9 +38,9 @@ function post(){
             error: function(xhr,status,error){
                 if(xhr.status == '413'){
                     //$.LoadingOverlay("hide");
-                    alert('FILE TOO LARGE PLEASE UPLOAD ONE SMALLER THAN 10MB');
+                    toastr.error('FILE TOO LARGE PLEASE UPLOAD ONE SMALLER THAN 10MB');
                     $('#progress').attr('aria-valuenow',0).css('width',0 + '%').text(0 + '%');
-                    $('input[type=file]').val('');
+                    clearInput();
 
 
                 }
@@ -48,7 +49,7 @@ function post(){
             statusCode:{
                 500:function(){
                     //$.LoadingOverlay('hide');
-                    alert('file not allowed');
+                    toastr.error('FILE EXTENSION NOT ALLOWED');
                     $('#progress').attr('aria-valuenow',0).css('width',0 + '%').text(0 + '%');
                     clearInput();
                 }

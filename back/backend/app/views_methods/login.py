@@ -1,20 +1,21 @@
-from flask import request,render_template,url_for,redirect,session,flash
+from flask import request,render_template,url_for,redirect,session
 from app.models.login import *
 
 
 def valid_login():
     res = None
+    error = ""
     if request.method == 'POST':
         email = request.form.get('email',None)
         pwd = request.form.get('password',None)
-        res = login(email,pwd)
+        if email is not None and pwd is not None:
+            res = login(email,pwd)
         if res:
             session['username'] = email
             return redirect(url_for('catalogo'))
         else:
-            flash('Invalid credentials!')
-            print 'Invalid credentials!'
-            return redirect(url_for('area'))
+            error = 'Invalid credentials!'
+            return render_template('area.html',error=error)
     elif request.method == 'GET' and 'username' in session:
         return redirect(url_for('catalogo'))
     else:
