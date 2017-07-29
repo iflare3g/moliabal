@@ -33,7 +33,26 @@
     font-size: 64px;
     color: #f7f6f3;
     margin-top: -90px;
-    margin-left: 420px;
+    margin-left: 120px;
+}
+
+@media only screen and (max-width : 800px) {
+    
+    #titoloc{
+        font-size: 40px;
+    }
+    
+    #iconemail{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    
+    #titoloc{
+        font-size: 28px;
+    }
 }
 
 a{
@@ -43,7 +62,6 @@ a{
 #iconemail{
     height: 100px;
     width: 100px;
-    margin-left: 320px;
 }
 
 a #titololoc{
@@ -132,6 +150,20 @@ a #titololoc{
     border: solid 1px black;
 }
 
+#btn-a{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+a #btn-a{
+    color: white;
+}
+
 #btn-lo{
     height: 50px;
     width: 100%;
@@ -148,6 +180,18 @@ a #titololoc{
     color: black;
     background-color: white;
     border: solid 1px black;
+}
+
+#btn-lo2{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #btn-ar{
@@ -282,7 +326,6 @@ a #titololoc{
 	}
 }
 
-
 /* FOOTER */
 
 footer{
@@ -312,6 +355,30 @@ footer{
 .carosello{
     display: none;
     height: 400px;
+}
+
+/* GALLERIA */
+
+#container {
+    position: absolute;
+    width: 768px;
+    height: 485px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container-carosello{
+    background-color: #212121;
+}
+
+@media only screen and (min-width : 1000px) {
+    
+    .carosello{
+    margin-left: 250px; 
+    }
 }
 
 /* ABOUT */ 
@@ -421,45 +488,6 @@ footer{
     top: -30px;
 }  
 
-/* GALLERIA */
-
-#container {
-    position: absolute;
-    width: 768px;
-    height: 485px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.container-carosello{
-    background-color: #212121;
-}
-
-.carosello{
-    /*margin-left: 250px; */
-}
-
-@media only screen and (min-width : 1000px) {
-    
-    .carosello{
-    margin-left: 250px; 
-    }
-}
-
-/* GALLRIA MODELLE */
-
-#galleria{
-    height: 200px;
-    padding: 10px;
-}
-
-#contenitore-galleria{
-    margin-top: 100px;
-}
-
 /* CONTACT */
 
 .fasciac{
@@ -506,21 +534,3 @@ footer{
 #bordo{
     border: solid 1px black;
 }
-
-/*
-1 sistemare img web sketches e inserirle 
-2 creare e sviluppare la galleria
-3 completare pag locations (btn e gallery)
-4 prodotti: [-accessori capelli -clutch -pochettes] 
-5 creare layout contact 
-6 account clienti e account amministratore (Monica)
-
-*/
-
-/*
-luxury hair accessories
-luxury fashion accessories
-accessori capelli made in italy
-fashion accessories made in italy
-luxury clutch & cosmetic bags
-*/
