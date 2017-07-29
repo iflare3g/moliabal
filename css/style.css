@@ -194,6 +194,18 @@ a #btn-a{
     margin-top: 10px;
 }
 
+#btn-d{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
 #btn-ar{
     color: white;
     width: 100%;
