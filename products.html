@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        
+ $(document).ready(function(){
+    
+    $(".fil").click(function(){
+       
+        var filterValue = $(this).attr('data-filter');
+        
+        if(filterValue == "all")
+        {
+            $(".all").show("slow");
+        }
+        else
+        {   
+            $(".all").not('.'+filterValue).hide("slow");
+            
+            $(".all").filter('.'+filterValue).show("slow");
+        }
+    });
 
-<script>
-    
- $(function() {
-		var selectedClass = "";
-		$(".filtro").click(function(){ 
-		selectedClass = $(this).attr("data-rel"); 
-     $("#port").fadeTo(100, 0.1);
-		$("#port div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
-    setTimeout(function() {
-      $("."+selectedClass).fadeIn().addClass('scale-anm');
-      $("#port").fadeTo(300, 1);
-    }, 300); 
-		
-	});
 });
-    
-</script>
+        
+    </script>
     
 </head>
 <body>
@@ -46,47 +52,52 @@
     
 </nav>
 
-<div class="container-btn">
-   <div class="container">
+ <div class="container">
+   <div class="container-btn">
       <div class="row">
-                    
-          <ul id="filtri">
+                       
+          <ul id="filtri">  
               <li>
-                  <button class="filtro" id="btn-f" data-rel="ha">
+                  <button class="fil" id="btn-f" data-filter="all">
+                      <strong>ALL</strong>
+                  </button>
+              </li> 
+              <li>
+                  <button class="fil" id="btn-f" data-filter="ha">
                       <strong>HAIR ACCESSORIES</strong>
                   </button>
               </li>
               <li>
-                  <button class="filtro" id="btn-f" data-rel="c">
-                      <strong>CLUTCH</strong>
-                  </buttton>
+                  <button class="fil" id="btn-f" data-filter="p">
+                      <strong>POCHETTES</strong>
+                  </button>
               </li>
               <li>
-                  <button class="filtro" id="btn-f" data-rel="p">
-                      <strong>POCHETTES</strong>
+                  <button class="fil" id="btn-f" data-filter="c">
+                      <strong>CLUTCH</strong>
                   </button>
               </li>
           </ul>
           
       </div> 
-      
-      <div id="port">
+   </div>
+      <div id="tutti">
       
       <div class="row">
         
-         <div class="col-md-3 col-xs-6 ha scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/1.png" class="img-responsive" id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/2.jpg" class="img-responsive" id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/3.jpg" class="img-responsive" id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/4.jpg" class="img-responsive" id="bordo">
          </div>
          
@@ -94,19 +105,19 @@
         
       <div class="row">    
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/5.jpg" class="img-responsive" id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/6.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/7.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/8.jpg" class="img-responsive " id="bordo">
          </div>
          
@@ -114,11 +125,11 @@
           
       <div class="row">
         
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/9.png" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 ha  scale-anm">
+         <div class="col-md-3 col-xs-6 all ha">
             <img src="ha/10.jpg" class="img-responsive " id="bordo">
          </div>
 
@@ -126,19 +137,19 @@
       
       <div class="row">    
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/1.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6  p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/2.jpg" class="img-responsive" id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/3.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/4.jpg" class="img-responsive " id="bordo">
          </div>
          
@@ -146,19 +157,19 @@
       
       <div class="row">    
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/5.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/6.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/7.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 p  scale-anm">
+         <div class="col-md-3 col-xs-6 all p">
             <img src="pochettes/8.jpg" class="img-responsive " id="bordo">
          </div>
          
@@ -166,19 +177,19 @@
       
       <div class="row">    
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/1.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/2.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/3.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/4.jpg" class="img-responsive " id="bordo">
          </div>
          
@@ -186,18 +197,17 @@
       
       <div class="row">    
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/5.jpg" class="img-responsive " id="bordo">
          </div>
          
-         <div class="col-md-3 col-xs-6 c  scale-anm">
+         <div class="col-md-3 col-xs-6 all c">
             <img src="clutch/6.jpg" class="img-responsive " id="bordo">
          </div>
                  
       </div>
       
    </div>
-</div>
 </div>
 
 <footer>
