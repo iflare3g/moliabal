@@ -9,8 +9,11 @@ function show(){
     $('button').click(function(){
         $('#categoria').hide();
         btn_text = $(this).text().toLowerCase();
-        var folder = '/getFolder?folder='+btn_text;
-     var param = getParameterByName('param')
+        if(!btn_text.startsWith('reserved')){
+            var folder = '/getFolder?folder='+btn_text;
+        }
+        
+        var param = getParameterByName('param')
         $.ajax({
             url : folder,
             success: function (data) {
