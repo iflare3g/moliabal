@@ -15,9 +15,7 @@ def upload():
                     abort(500)
                 
             elif 'img' in request.files:
-                print request.files
                 sub_folder = request.form.get('choose',None).lower().replace(' ','')
-                print sub_folder
                 try:
                     filename = photos.save(request.files.get('img',None),folder=sub_folder)
                     return  filename

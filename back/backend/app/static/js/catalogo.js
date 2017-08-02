@@ -12,7 +12,6 @@ function show(){
         if(!btn_text.startsWith('reserved')){
             var folder = '/getFolder?folder='+btn_text;
         }
-        
         var param = getParameterByName('param')
         $.ajax({
             url : folder,
@@ -25,9 +24,13 @@ function show(){
                         }
                         else{
                             data.file.forEach(function(entry){
+                                
                                 if( entry.match(/\.(jpe?g|png|gif)$/) ) { 
                                     $('#uno').append("<div id='"+ i++ +"' class='col-md-3 col-xs-6 img-box'> <img src='"+ entry +"' class='img-responsive' id='imgar'><button id='btn-d' onclick='delete_file()'>cancella</button></div>");
-                                } 
+                                }
+                                else if(entry.match(/\.(pdf)$/) ){
+                                    $('#uno').append("<div id='"+ i++ +"' class='col-md-3 col-xs-6 img-box'> <embed src='"+ entry +"' width='500' height='375' type='application/pdf' id='imgar'><button id='btn-d' onclick='delete_file()'>cancella</button></div>");
+                                }
                             });
                         }
                         //console.log(data.file[0]);
@@ -42,6 +45,7 @@ function show(){
 }
 
 function show_customers(folder){
+        var i = 0;
         $.ajax({
             url : folder,
             success: function (data) {
@@ -54,6 +58,9 @@ function show_customers(folder){
                             if( entry.match(/\.(jpe?g|png|gif)$/) ) { 
                                 $('#uno').append("<div class='col-md-3 col-xs-6'> <img src='"+ entry +"' class='img-responsive' id='imgar'></div>");
                         } 
+                                else if(entry.match(/\.(pdf)$/) ){
+                                    $('#uno').append("<div id='"+ i++ +"' class='col-md-3 col-xs-6 img-box'> <embed src='"+ entry +"' width='500' height='375' type='application/pdf' id='imgar'></div>");
+                                }
                         });
                     }
                     //console.log(data.file[0]);
@@ -65,6 +72,7 @@ function show_customers(folder){
 function delete_file(id){
     toastr.options = {positionClass:"toast-top-full-width"};
     var path_to_delete = $('#imgar').attr('src');
+    console.log(path_to_delete);
     var url = '/deleteFile'
     var data = {'data':path_to_delete}
     $.ajax({
