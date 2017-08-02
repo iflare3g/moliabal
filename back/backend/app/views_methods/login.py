@@ -1,5 +1,6 @@
 from flask import request,render_template,url_for,redirect,session
 from app.models.login import *
+from app.config.config import EMAIL
 
 
 def valid_login():
@@ -9,10 +10,10 @@ def valid_login():
         email = request.form.get('email',None)
         pwd = request.form.get('password',None)
         if email is not None and pwd is not None:
-            res = login(email,pwd)
+            res,param = login(email,pwd)
         if res:
             session['username'] = email
-            return redirect(url_for('catalogo'))
+            return redirect(url_for('catalogo',param=param))
         else:
             error = 'Invalid credentials!'
             return render_template('area.html',error=error)

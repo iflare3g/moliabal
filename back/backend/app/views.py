@@ -3,6 +3,8 @@ from app import app
 from views_methods.upload import *
 from views_methods.login import *
 from views_methods.get_folder import *
+from views_methods.catalogo import *
+from views_methods.amministra import *
 from decorators.decorators import *
 
 @app.route('/')
@@ -38,12 +40,13 @@ def about():
 @login_required
 @admin_required
 def prodotto():
-    return render_template('amministra.html')
-    
+    return amministra()
+ 
 @app.route('/catalogo')
 @login_required
 def catalogo():
-    return render_template('riservato.html')
+    return riservato()
+    
     
 @app.route('/upload',methods=['GET','POST'])
 @login_required
@@ -60,15 +63,18 @@ def logout_area():
     
 @app.route('/getFolder',methods=['GET'])
 @login_required
-@admin_required
 def get_fold():
     return get_folder()
     
-@app.route('/deleteFile',methods=['GET'])
+@app.route('/deleteFile',methods=['POST'])
 @login_required
 @admin_required
 def delete():
-    return remove('app/static/img/showroom/super.jpg')
+    file = str(request.form.get('data',None))
+    if file.startswith('..'):
+        file = file.replace('..','app')
+    print file
+    return remove(file)
     
 @app.errorhandler(413)
 def file_not_allowed(e):

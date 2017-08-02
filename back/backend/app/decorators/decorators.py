@@ -1,5 +1,5 @@
 from functools import wraps
-from flask import session,redirect,url_for
+from flask import session,redirect,url_for,abort
 from app.config.config import EMAIL
 
 def login_required(f):
@@ -15,6 +15,6 @@ def admin_required(f):
     def decorated_function(*args,**kwargs):
         if session and 'username' in session:
             if not session.get('username',None) == EMAIL.get('mail',None):
-                return 'NOT ALLOWED!'
+                abort(404)
         return f(*args,**kwargs)
     return decorated_function

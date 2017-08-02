@@ -33,7 +33,26 @@
     font-size: 64px;
     color: #f7f6f3;
     margin-top: -90px;
-    margin-left: 420px;
+    margin-left: 120px;
+}
+
+@media only screen and (max-width : 800px) {
+    
+    #titoloc{
+        font-size: 40px;
+    }
+    
+    #iconemail{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    
+    #titoloc{
+        font-size: 28px;
+    }
 }
 
 a{
@@ -43,7 +62,6 @@ a{
 #iconemail{
     height: 100px;
     width: 100px;
-    margin-left: 320px;
 }
 
 a #titololoc{
@@ -134,6 +152,20 @@ a #titololoc{
     border: solid 1px black;
 }
 
+#btn-a{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+a #btn-a{
+    color: white;
+}
+
 #btn-lo{
     height: 50px;
     width: 100%;
@@ -150,6 +182,30 @@ a #titololoc{
     color: black;
     background-color: white;
     border: solid 1px black;
+}
+
+#btn-lo2{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#btn-d{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: 'font1';
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #btn-ar{
@@ -434,22 +490,14 @@ footer{
 }
 
 .container-carosello{
-    background-color: #f7f6f3;
+    background-color: #212121;
 }
 
-.carosello{
-    /*margin-left: 40px; */
-}
-
-/* GALLRIA MODELLE */
-
-#galleria{
-    height: 200px;
-    padding: 10px;
-}
-
-#contenitore-galleria{
-    margin-top: 100px;
+@media only screen and (min-width : 1000px) {
+    
+    .carosello{
+    margin-left: 250px; 
+    }
 }
 
 /* CONTACT */
@@ -492,6 +540,13 @@ footer{
     background-color: black;
 }
 
+@media only screen and (max-width : 992px) {
+    
+    .menu-riservato{
+        height: 600px;
+    }
+}
+
 #imgar{
     margin-top: 20px;
 }
@@ -505,12 +560,3 @@ footer{
   text-align:center; 
 }
 
-/*
-1 sistemare img web sketches e inserirle 
-2 creare e sviluppare la galleria
-3 completare pag locations (btn e gallery)
-4 prodotti: [-accessori capelli -clutch -pochettes] 
-5 creare layout contact 
-6 account clienti e account amministratore (Monica)
-
-*/

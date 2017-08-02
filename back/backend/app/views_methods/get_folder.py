@@ -1,16 +1,19 @@
 from os import walk
 import os
-from flask import jsonify
+from flask import jsonify,request
 
 def get_folder():
+    folder = request.args.get('folder').replace(' ','')
     f = []
     files = {}
-    mypath = 'app/static/img/showroom/'
+    mypath = 'app/static/img/' + folder
     for (dirpath, dirnames, filenames) in walk(mypath):
         f.extend(filenames)
         break
-    f = map(lambda x:'../static/img/showroom/' + x,f)
+    f = map(lambda x:'../static/img/' + folder + '/'+ x,f)
     files['file'] = f
+    if len(f) == 0:
+        files['file'] = 'Nessun file presente'
     return jsonify(files)
     
     

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
 
@@ -16,55 +16,65 @@
        <ul class="menu-riservato">
        
        <div id="prova">
-       
+              
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">MARKETING &amp; ADVERTISING</button>
+             <button id="btn-ar">MARKETING</button>
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">STILL-LIFE PHOTOS</button>
+              <button id="btn-ar">STILL-LIFE PHOTOS</button>
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">BRAND IMAGES</button>
+              <button id="btn-ar">BRAND IMAGES</button>
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">DISPLAYS</button>
+              <button id="btn-ar">DISPLAYS</button>
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">CATALOGUES</button>
+              <button id="btn-ar">CATALOGUES</button>
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">LOCATIONS</button>     
+              <button id="btn-ar">LOCATIONS</button>     
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">PRICE LISTS</button>     
+              <button id="btn-ar">PRICE LISTS</button>     
           </div>
           
           <div class="col-md-3 col-xs-12">
-              <button id="btn-ar" oneclick="bottoni()">FASHION SKETCHES</button>     
+              <button id="btn-ar">FASHION SKETCHES</button>     
           </div>
            
       </div>
-           
+               
        </ul> 
        
-       <div id="uno" oneclick="bottoni()">
+       <h3 id='categoria'><center>Scegli la categoria</center></h3>
+       
+       <!-- deve vederlo solo l'utente amministratore -->
+        <div class="col-xs-12">
+         {% if session.username == email  %}
+               <a href="/prodotto"><button id="btn-lo2">TORNA IN AMMINISTRAZIONE</button></a>
+         {% endif %}
+        </div>  
+       
+       <!-- -->
+       
+       <div id="uno">
        </div>
        
-       <div id="due" oneclick="bottoni()">
-           <img src="../static/img/sfondo.jpg" class="img-responsive col-xs-3" id="imgar">
-       </div>
-       
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type="text/javascript" src="../static/js/catalogo.js"></script>
   </div>
 </div>
 
+{% include 'footer.html' %}
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script type="text/javascript" src="../static/js/catalogo.js"></script>
+       
 </body>
 </html>

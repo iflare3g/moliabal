@@ -8,7 +8,7 @@ app = Flask(__name__)
 docs = UploadSet('documents',DOCUMENTS)
 photos = UploadSet('photos',IMAGES)
 app.config['UPLOADED_DOCUMENTS_DEST'] = 'app/static/img/catalogo'
-app.config['UPLOADED_PHOTOS_DEST'] = 'app/static/img/showroom'
+app.config['UPLOADED_PHOTOS_DEST'] = 'app/static/img/'
 configure_uploads(app,docs)
 configure_uploads(app,photos)
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024

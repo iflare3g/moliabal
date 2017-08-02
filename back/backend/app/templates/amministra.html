@@ -17,22 +17,23 @@
        
        <ul class="menu-riservato">
        
-           <div class="col-xs-4 col-xs-offset-8">
+           <div class="col-xs-3 col-xs-offset-8">
                <a href="/logout"><button id="btn-lo">LOG OUT</button></a>
            </div>       
        
            <div class="col-xs-12">
-              <a href="/catalogo"><button id="btn-ar">VISUALIZZA CATALOGO / SHOWROOM</button></a>
+            {% if session.username == email %}
+              <a href="{{url_for('catalogo',param='boss')}}"><button id="btn-ar">VISUALIZZA AREA CLIENTI</button></a>
+             {% endif %}
            </div>
        </ul> 
               
-        <form name='form' class="col-xs-12" action="{{url_for('carica')}}" method='POST' enctype='multipart/form-data'>
+        <form class="col-xs-12" action="{{url_for('carica')}}" method='POST' enctype='multipart/form-data'>
          
          <div class="input-container">
          
-             <h2 id="titolo2">Inserire il prodotto</h2>
+             <h2 id="titolo2">Inserisci cataloghi</h2>
           
-          <input id="input" type="text" placeholder="nome" name="prodotto">
           <input id="input" type="file" placeholder="carica foto" name="catalogo">
            
          </div>
@@ -46,13 +47,23 @@
         
         <hr>
         
-        <form name='form' class="col-xs-12" action="{{url_for('carica')}}" method='POST' enctype='multipart/form-data'>
+        <form class="col-xs-12" action="{{url_for('carica')}}" method='POST' enctype='multipart/form-data'>
          
          <div class="input-container">
          
-             <h2 id="titolo2">Inserire foto showroom</h2>
+          <h2 id="titolo2">Inserire foto</h2>
           
-          <input id="input" type="file" placeholder="carica foto" name="showroom">
+           <select name='choose'>
+              <option value="marketing" selected>Marketing</option>
+              <option value="still-lifephotos">Still-Life Photos</option>
+              <option value="brandimages">Brand Images</option>
+              <option value="displays">Displays</option>
+              <option value="locations">Locations</option>
+              <option value="pricelists">Price Lists</option>
+              <option value="fashionsketches">Fashions Sketches</option>
+           </select>
+          
+          <input id="input" type="file" placeholder="carica foto" name="img">
            
          </div>
    
@@ -63,10 +74,10 @@
    </div>
 </div>
 
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../static/js/loadingoverlay.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script type="text/javascript" src="../static/js/progress.js"></script>
+
 </body>
 </html>

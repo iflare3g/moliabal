@@ -61,6 +61,5 @@ function post(){
 
 function clearInput(){
     $('input[type=file]').val('');
-    $('input[type=text]').val('');
 
 }

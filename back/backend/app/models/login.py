@@ -9,14 +9,15 @@ def login(username,pwd):
             data = [username,pwd]
             query = 'select * from customers where username=%s and pwd=%s;'
             res = safety_get_query(connection,query,data)
-            print 'customers'
-            return res
+            param = None
+            return res,param
         else:
             data = [username,pwd]
             query = 'select * from admin where username=%s and pwd=%s;'
             res = safety_get_query(connection,query,data)
             print 'boss'
-            return res
+            param = 'boss'
+            return res,param
     else:
         return None
         
